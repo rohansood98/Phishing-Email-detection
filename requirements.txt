@@ -1,0 +1,14 @@
+transformers
+torch
+gradio
+datasets
+peft
+trl
+bitsandbytes
+tqdm
+scikit-learn
+tensorflow
+keras-tuner
+nltk
+matplotlib
+huggingface-hub
