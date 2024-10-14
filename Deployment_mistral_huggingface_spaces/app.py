@@ -5,7 +5,7 @@ import string
 import re
 
 # Load model and tokenizer from Hugging Face Hub
-model_name = "Rsood/mistral-instruct-v2-phishing-detection"
+model_name = "Rsood/mistral-instruct-v2-phishing-detection-v2"
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     device_map="auto",            # Automatically handle device placement (GPU/CPU)
@@ -57,6 +57,14 @@ def classify_email(email_text):
     "Hello"
     Your Response: 0
     ### Example 2:
+    Email Content:
+    "How are you"
+    Your Response: 0
+    ### Example 3:
+    Email Content:
+    "Hello"
+    Your Response: 0
+    ### Example 4:
     Email Content:
     "Your account has been hacked click the link below URLFOUND"
     Your Response: 1
